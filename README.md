@@ -8,7 +8,7 @@ This repository provides two Python-based proof-of-concept (PoC) exploits target
 
     Simple and efficient for SMB-hosted DLL payloads
 
-2. POC_ManageEngine_LO.py – Large Object Injection & Export
+2. LargeObjectAPI.py – Large Object Injection & Export
 
     Encodes the reverse shell payload (DLL) into hex
 
