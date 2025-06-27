@@ -11,14 +11,14 @@ This repository contains multiple **proof-of-concept (PoC) exploits** for **CVE-
 * Calls the UDF to execute a reverse shell
 * Easiest and fastest method (requires SMB egress)
 
-#### `POC_ManageEngine_LO.py` – Reverse Shell via Large Object Injection
+#### `LargeObjectAPI.py` – Reverse Shell via Large Object Injection
 
 * Injects a hex-encoded DLL payload into PostgreSQL's `pg_largeobject`
 * Uses `lo_export()` to write the DLL to disk
 * Defines and executes the UDF for RCE
 * Suitable for **egress-restricted environments** (no SMB required)
 
-#### `Blind-SQLI-Time.py` – Blind Time-Based SQL Injection Enumerator
+#### `BlindSQLI.py` – Blind Time-Based SQL Injection Enumerator
 
 * Performs **blind SQLi** against the vulnerable endpoint
 * Extracts string data (e.g., usernames, table names) using `pg_sleep()` delay-based logic
